@@ -23,6 +23,7 @@ html {
 .form__result {
     text-align: center;
     border: 1px solid rgb(204, 204, 204);
+    background-color: rgba(252, 252, 252, 0.514);
 
 }
 
@@ -52,4 +53,5 @@ html {
 
 .form__fieldset {
     border: 1px solid rgb(204, 204, 204);
+    background-color: rgba(252, 252, 252, 0.514);
 }
