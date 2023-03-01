@@ -1,39 +1,46 @@
-let currencyElement = document.querySelector(".js-currency");
-let amountElement = document.querySelector(".js-amount");
-let formElement = document.querySelector(".js-form");
-let resultElement = document.querySelector(".js-result");
+{
+    const calculateResults = (amount, currency) => {
+        switch (currency) {
+            case "USD":
+                return amount / 4.39;
 
-formElement.addEventListener("submit", (event) => {
-    event.preventDefault();
+            case "EUR":
+                return amount / 4.66;
 
-    let amount = amountElement.value;
-    let currency = currencyElement.value;
-    let result;
+            case "SEK":
+                return amount / 0.41;
 
-    switch (currency) {
-        case "USD":
-            result = amount / 4.39;
-            break;
+            case "CHF":
+                return amount / 4.72;
 
-        case "EUR":
-            result = amount / 4.66;
-            break;
+        }
+    };
 
-        case "SEK":
-            result = amount / 0.41;
-            break;
-
-        default:
-            result = amount / 4.72;
-            break;
+    const updateResultText = (amount, result, currency) => {
+        const resultElement = document.querySelector(".js-result");
+        resultElement.innerText = `${result.toFixed(2)} ${currency}`;
     }
-    
-    resultElement.innerText = `${result.toFixed(2)} ${currency}`;
-});
 
+    const onFormSubmit = (event) => {
+        event.preventDefault();
 
+        const currencyElement = document.querySelector(".js-currency");
+        const amountElement = document.querySelector(".js-amount");
 
+        const amount = +amountElement.value;
+        const currency = currencyElement.value;
 
+        const result = calculateResults(amount, currency);
 
+        updateResultText(amount, result, currency);
 
+    };
 
+    const init = () => {
+        const formElement = document.querySelector(".js-form");
+        formElement.addEventListener("submit", onFormSubmit);
+    }
+
+    init();
+
+}
