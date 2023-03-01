@@ -33,7 +33,6 @@
         const result = calculateResults(amount, currency);
 
         updateResultText(amount, result, currency);
-
     };
 
     const init = () => {
