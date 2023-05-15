@@ -3,7 +3,7 @@ This is a simple calculator which convert zlotys to dollars, euro, Swedish krona
 ## Demo
 https://wiktorianizielska.github.io/currency-converter/
 
-[![converter.gif](https://i.postimg.cc/PJVXn2m1/converter.gif)](https://postimg.cc/dZdP8RN0)
+![(https://gifs.com/gif/converter-46n2RV)](https://j.gifs.com/46n2RV.gif)
 
 ## Technologies
 Project is created with:
