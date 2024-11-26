@@ -1,5 +1,6 @@
 # currency-converter
 This is a simple calculator which convert zlotys to dollars, euro, Swedish kronas or Swiss franc. 
+
 ## Demo
 https://wiktorianizielska.github.io/currency-converter/
 
@@ -7,6 +8,8 @@ https://wiktorianizielska.github.io/currency-converter/
 
 ## 🛠️ Technologies
 Project is created with:
-- HTML
-- CSS
-- JavaScript
+- **HTML**
+- **CSS**: normalize.css, alternative box model
+- **JavaScript**
+- camelCase
+- **BEM** convention
