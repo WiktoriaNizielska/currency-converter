@@ -13,7 +13,6 @@ html {
     width: 100%;
     padding: 10px;
     border-radius: 1px;
-
 }
 
 .form__button:hover {
@@ -24,7 +23,6 @@ html {
     text-align: center;
     border: 1px solid rgb(204, 204, 204);
     background-color: rgba(252, 252, 252, 0.514);
-
 }
 
 .form__labelText {
